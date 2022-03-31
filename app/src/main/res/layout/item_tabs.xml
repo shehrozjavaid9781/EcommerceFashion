@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/tabSelectIV"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tabSelectTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9ssp"
+        android:fontFamily="@font/dms_sans_regular"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabSelectIV" />
+
+    <TextView
+        android:id="@+id/cartCountTv"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:background="@drawable/red_circle_rounded"
+        android:text="99"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8ssp"
+        android:fontFamily="@font/dms_sans_regular"
+        android:layout_marginEnd="-8dp"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toTopOf="@+id/tabSelectIV"
+        app:layout_constraintEnd_toEndOf="@+id/tabSelectIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
